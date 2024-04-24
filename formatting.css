@@ -1,25 +1,23 @@
-/* body{ 
+#first_page{
     background-color: #fa4734;
-    background-image: url("indian-menu-at-the-the.jpg");
+   
     background-color: transparent;
-} */
+    text-align: center;
+    color: rgb(234, 241, 241);
+  
+}
+h1 {
+    display: inline-block;
+    font-size: 9.2rem;
+    color: rgb(234, 241, 241);
+    margin-top: 10%;
+}
 
 body{
-    
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    min-height:100vh;
-    background:url('back3.avif')  ;
-    background-position: center;
-    background-size: cover;
-
-}
-h1{
-    color: rgb(86, 57, 21);
-    align-items: start;
-    margin: 10px 10px;
-    text-size-adjust: 80%;
-
+    background-image: url("indian-menu-at-the-the.jpg");
+    background-size: 100%;
 }
 
+#curb{
+    font-size
+}
