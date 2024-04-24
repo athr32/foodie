@@ -1,0 +1,25 @@
+/* body{ 
+    background-color: #fa4734;
+    background-image: url("indian-menu-at-the-the.jpg");
+    background-color: transparent;
+} */
+
+body{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background:url('back3.avif')  ;
+    background-position: center;
+    background-size: cover;
+
+}
+h1{
+    color: rgb(86, 57, 21);
+    align-items: start;
+    margin: 10px 10px;
+    text-size-adjust: 80%;
+
+}
+
