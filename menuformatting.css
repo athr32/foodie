@@ -1,0 +1,22 @@
+.food-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+body{
+    background-image: url("dewsis\ \(2\).jpeg");
+    background-size: 100%;
+    font-size: 2.2rem;
+    color: white;
+}
+
+.quantity-controls {
+    display: none;
+    align-items: center;
+}
+
+.quantity-controls input {
+    width: 40px;
+    text-align: center;
+    margin: 0 5px;
+}

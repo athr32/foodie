@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <link rel="stylesheet" href="menuformatting.css">
+    <script src="dewsisJS.js" defer></script>
+</head>
+<div id="Dewsis menu">
+<body>
+    <div id="food-menu"></div>
+   
+    <script>
+        // Define food items
+        
+        const foodItems = [
+            { name: 'Cappuccino', price: '60' },
+            { name: 'Tea', price: '10' },
+            { name: 'Masala Coke', price: '60' },
+            { name: 'Oreo Shake', price: '75' },
+            { name: 'French Fries', price: '60' },
+            { name: 'Veg Burger', price: '70' },
+            { name: 'Cheese Burger', price: '80' },
+            { name: 'Veg Cheese Sandwich', price: '60' },
+            { name: 'Aloo Paratha', price: '45' },
+            { name: 'Paneer Paratha', price: '60' },
+            { name: 'Idli(2pc) Sambhar', price: '50' },
+            { name: 'Masala Dosa', price: '70' },
+            { name: 'Red Sauce Pasta', price: '130' },
+            { name: 'Veg Hakka Noodles', price: '90' },
+            { name: 'Veg Spring Rolls', price: '80' },
+            { name: 'Chilli Potato', price: '80' },
+            { name: 'Paneer Fried Rice', price: '110' },
+            { name: 'Veggie Delight Pizza', price: '170' },
+            { name: 'Peppy Paneer Pizza', price: '180' },
+            { name: 'Farmhouse Pizza', price: '210' },
+            { name: 'Brownie with Ice Cream', price: '80' },
+            
+        ];
+
+        // Generate HTML for each food item
+        const foodMenu = document.getElementById('food-menu');
+        foodItems.forEach(item => {
+            const html = `
+                <div class="food-item">
+                    <span>${item.name} - ₹${item.price}</span>
+                    <input type="checkbox" onclick="toggleQuantityControls(this)">
+                    <div class="quantity-controls">
+                        <button onclick="adjustQuantity(this, false)">-</button>
+                        <input type="number" value="1" readonly>
+                        <button onclick="adjustQuantity(this, true)">+</button>
+                    </div>
+                </div>
+            `;
+            foodMenu.insertAdjacentHTML('beforeend', html);
+        });
+    </script>
+</body>
+</div>
+</html>

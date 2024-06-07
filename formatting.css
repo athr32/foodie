@@ -8,16 +8,25 @@
 }
 h1 {
     display: inline-block;
-    font-size: 9.2rem;
-    color: rgb(234, 241, 241);
-    margin-top: 10%;
+    font-size: 7.2rem;
+    color: rgb(19, 112, 7);
+    margin-top: 5%;
+    margin-bottom:2px;
 }
 
 body{
-    background-image: url("indian-menu-at-the-the.jpg");
+    background-image: url("homebg\ \(2\).jpeg");
     background-size: 100%;
 }
+span.a {
+    display: inline; /* the default for span */
+    width: 100px;
+    height: 100px;
+    margin-left:60%;  
+    color: rgb(97, 16, 202);
+  }
 
 #curb{
-    font-size
-}
+    font-size: 3.2rem;
+    color: rgb(19, 112, 7);
+};
